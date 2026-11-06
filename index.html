@@ -36,6 +36,11 @@ main{flex:1;margin-left:300px;padding:28px 40px 80px;max-width:960px}
 .hero{background:linear-gradient(135deg,#6b4a2b,#8b5a2b);color:#fbf3e6;border-radius:14px;padding:26px 30px;margin-bottom:24px;box-shadow:0 4px 14px rgba(90,60,30,.25)}
 .hero h1{font-size:1.5rem;margin-bottom:6px}
 .hero p{opacity:.92;font-size:.92rem}
+.intro{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:22px 24px;margin-bottom:20px}
+.intro h2{font-size:1.15rem;color:var(--accent2);margin-bottom:10px}
+.intro p{font-size:.92rem;color:var(--muted);margin-bottom:10px}
+.intro ul{margin:6px 0 8px 22px;color:var(--muted);font-size:.92rem}
+.intro li{margin-bottom:5px}
 .sec-title{margin:34px 0 14px;font-size:1.2rem;color:var(--accent2);border-bottom:2px solid var(--accent);padding-bottom:6px}
 .item{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:20px 22px;margin-bottom:18px;box-shadow:0 1px 3px rgba(90,60,30,.08)}
 .item-head{display:flex;align-items:baseline;gap:10px;margin-bottom:8px}
@@ -98,6 +103,19 @@ details.ref p{font-size:.88rem;color:var(--muted);margin-top:6px}
       <h1>Relevamiento de integración SAP ↔ Odoo</h1>
       <p>Completá cada ítem: marcá si se incluye en la propuesta y escribí la respuesta del cliente. Al final, «Imprimir / PDF» genera el documento listo para enviar. Las respuestas se guardan automáticamente en este navegador.</p>
     </div>
+    <section class="intro">
+      <h2>Introducción</h2>
+      <p>Este documento es un <strong>checklist de relevamiento</strong> para el <strong>diseño y la estimación de la integración entre SAP y Odoo</strong>. Completarlo nos permite entender tu operación con precisión y definir correctamente el alcance, los contratos de datos, los volúmenes y la seguridad de la integración.</p>
+      <p><strong>Qué tenés que completar:</strong> en cada ítem marcá si el punto <strong>se incluye en la propuesta</strong> (Sí / No / Parcial / A definir) y escribí la <strong>respuesta</strong> a la pregunta planteada. No hace falta ser técnico: respondé lo que sepas y dejá en blanco lo demás — lo aclaramos en la próxima reunión.</p>
+      <p><strong>Por qué es importante:</strong> cada respuesta reduce supuestos y riesgos. Con estos datos podemos:</p>
+      <ul>
+        <li>dimensionar el esfuerzo (volúmenes, concurrencia y modalidad de comunicación);</li>
+        <li>definir quién es dueño de cada dato y de cada proceso;</li>
+        <li>especificar los endpoints, las transformaciones y la seguridad necesarios;</li>
+        <li>entregar una estimación realista en lugar de un número a ciegas.</li>
+      </ul>
+      <p>Los bloques <strong>«Ejemplo»</strong> y <strong>«Casos de uso»</strong> son orientativos: sirven para que te hagas una idea de qué se espera en cada punto.</p>
+    </section>
     <div class="toolbar">
       <button onclick="expandir(true)">Abrir ejemplos</button>
       <button onclick="expandir(false)">Cerrar ejemplos</button>
